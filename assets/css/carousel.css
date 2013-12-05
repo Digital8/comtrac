@@ -1,0 +1,102 @@
+.carousel {
+  height: 700px;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel .item {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.carousel .caption {
+  background-color: #00376c;
+  background-color: rgba(0, 55, 108, 0.9);
+  color: #fff;
+  bottom: 0;
+  font-weight: 200;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+}
+
+.carousel .caption .contained {
+  padding: 45px 0 80px;
+}
+
+.carousel .caption p {
+  display: inline-block;
+  font-size: 1.875em;
+  line-height: 1.25em;
+  margin: 0 0.625em 0 0;
+  vertical-align: middle;
+}
+
+.carousel .caption .button {
+  background-color: #5faf00;
+  border-color: #5faf00;
+  color: #fff;
+}
+
+.carousel .caption .button:hover,
+.carousel .caption .button:focus {
+  background-color: #77c425;
+  border-color: #77c425;
+}
+
+.carousel .pager {
+  bottom: 0;
+  color: #5faf00;
+  left: 0;
+  line-height: 1em;
+  padding-bottom: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 101;
+}
+
+.carousel .pager span {
+  border: 1px solid #5faf00;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 0 3px;
+  position: relative;
+  text-indent: -999em;
+  vertical-align: middle;
+  width: 8px;
+}
+
+.carousel .pager span:before {
+  bottom: -15px;
+  content: '';
+  left: -5px;
+  position: absolute;
+  right: -5px;
+  top: -15px;
+}
+
+.carousel .pager span:first-child:before {
+  left: -15px;
+  right: -3px;
+}
+
+.carousel .pager span:last-child:before {
+  left: -3px;
+  right: -15px;
+}
+
+.carousel .pager .cycle-pager-active {
+  background-color: #5faf00;
+  border: none;
+}

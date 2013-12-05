@@ -1,0 +1,89 @@
+.section {
+  color: #636f7f;
+  padding: 90px 0;
+  position: relative;
+}
+
+.section.bottom-heavy {
+  padding-bottom: 55px 0 60px;
+}
+
+.section .secondary.navigation {
+  text-align: right;
+}
+
+.section .secondary.navigation a {
+  color: #636f7f;
+  display: block;
+  line-height: 1.25em;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  position: relative;
+}
+
+.section .secondary.navigation a:hover,
+.section .secondary.navigation a:focus {
+  color: #5faf00;
+}
+
+.section .secondary.navigation a:after {
+  background-color: #5faf00;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 2px;
+}
+
+.section .secondary.navigation a:hover:after,
+.section .secondary.navigation a:focus:after {
+  background-color: #77c425;
+  height: 100%;
+  top: 0;
+}
+
+.columns[data-has-navigation] + .columns {
+  position: relative;
+}
+
+.columns[data-has-navigation] + .columns:before {
+  background-color: #e0e2e5;
+  content: '';
+  display: block;
+  height: 100%;
+  left: -18px;
+  position: absolute;
+  width: 1px; 
+}
+
+.section .heading {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.625em;
+  margin: 0;
+}
+
+.section .introduction {
+  color: #094075;
+  line-height: 1.333em;
+  margin-bottom: 1.25em;
+  text-align: center;
+}
+
+.section .columns .introduction {
+  text-align: left;
+}
+
+.section p {
+  line-height: 1.875em;
+  margin:  0 0 1.75em;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.section .button {
+  min-width: 140px;
+}

@@ -1,0 +1,16 @@
+.clients {
+  padding: 40px 0;
+}
+
+.clients .heading,
+.clients .list {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+
+.clients .heading {
+  font-size: 1.75em;
+  line-height: 1em;
+}

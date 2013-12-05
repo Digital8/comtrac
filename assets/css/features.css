@@ -1,0 +1,67 @@
+.features {
+  background-attachment: scroll, fixed;
+  background-image:
+    url(/assets/images/noise.png),
+    url(/assets/images/concentric-circles-light.png);
+  background-position: 50% 100%;
+  background-repeat: repeat, no-repeat;
+  border-bottom: 1px solid #e0e2e5;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.feature {
+  display: inline-block;
+  padding: 25px 70px;
+  max-width: 265px;
+}
+
+.feature .heading {
+  font-size: 1.75em;
+  line-height: 1em;
+  margin: 0;
+}
+
+[data-feature] .heading:before {
+  background: url('/assets/images/all@2x.png') no-repeat;
+  background-size: 319px 108px;
+  content: '';
+  display: block;
+  margin: 0 auto 50px;
+}
+
+[data-feature=office-cleaning] .heading:before {
+  background-position: -71px -53px;
+  height: 54px;
+  width: 55px;
+}
+
+[data-feature=window-cleaning] .heading:before {
+  background-position: -136px -50px;
+  height: 58px;
+  width: 58px;
+}
+
+[data-feature=pressure-cleaning] .heading:before {
+  background-position: -200px -37px;
+  height: 68px;
+  margin-bottom: 45px;
+  width: 70px;
+}
+
+.feature p {
+  margin: 1em 0 1.75em;
+}
+
+.feature .button {
+  border-color: #004588;
+  color: #004588;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.feature .button:hover,
+.feature .button:focus {
+  background-color: #004588;
+  color: #fff;
+}

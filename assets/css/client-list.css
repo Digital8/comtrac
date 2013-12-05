@@ -1,0 +1,40 @@
+.heading + .client.list {
+  margin-top: 1em;
+}
+
+.client.list {
+  color: #68b30e;
+  padding: 0 0.875em;
+}
+
+.client.list .client {
+  display: inline-block;
+  line-height: 1.5em;
+  width: 33%;
+}
+
+.client.list .name,
+.client.list .history {
+  color: #636f7f;
+  display: block;
+  padding-left: 18px;
+  position: relative;
+}
+
+.client.list .name:before {
+  border: 1px solid #5faf00;
+  border-radius: 50%;
+  content: '';
+  height: 6px;
+  left: 0;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+}
+
+.client.list .history {
+  font-size: 0.875em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}

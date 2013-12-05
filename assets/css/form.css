@@ -1,0 +1,232 @@
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+[data-type=text] {
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit;
+  background-color: #f4f4f6;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  line-height: 1.425em;
+  margin: 0;
+  max-width: 100%;
+  min-height: 46px;
+  padding: 10px 15px;
+  text-rendering: inherit;
+  width: 100%;
+}
+
+[data-type=text]:focus,
+input[type=radio]:focus,
+input[type=checkbox]:focus {
+  outline: none;
+}
+
+/* Mobile Safari is a pain */
+[data-type=text][disabled] {
+  -webkit-text-fill-color: #666;
+  opacity: 1;
+}
+
+select[data-type=text] {
+  background: url('/assets/images/select@2x.png') no-repeat 100% 50%;
+  background-size: 27px 7px;
+}
+
+
+textarea[data-type=text]  {
+  min-height: 80px;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  border: 2px solid #e0e2e5;
+  border-radius: 3px;
+  display: inline-block;
+  height: 20px;
+  margin: 5px 0;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.field.required input[type=checkbox] {
+  -webkit-transition: background-color: 200ms ease;
+}
+
+.field.required[data-invalid] input[type=checkbox] {
+  background-color: #e71647;  
+}
+
+input[type=checkbox] ~ label {
+  line-height: 1.333em;
+  padding-left: 5px;
+  position: relative;
+  top: 1px;
+}
+
+input[type=checkbox]:checked,
+.field.required input[type=checkbox]:checked {
+  background: url('/assets/images/all@2x.png') no-repeat -156px -3px;
+  background-size: 319px 108px;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  background: url('/assets/images/all@2x.png') no-repeat -295px -27px;
+  background-size: 319px 108px;
+  display: inline-block;
+  height: 24px;
+  margin-right: 0.5em;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  width: 24px;
+}
+
+input[type=radio]:checked {
+  background-position: -295px 0;
+}
+
+.row {
+  margin: 0;
+  padding: 15px 0;
+}
+
+.options {
+  color: #636f7f;
+}
+
+.options .field {
+  margin-left: 1em;
+}
+
+.field {
+  box-sizing: border-box;
+  margin: 10px 0;
+  position: relative;
+}
+
+.field.ish {
+  text-align: right;
+}
+
+.field:first-child {
+  margin-top: 0;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field[data-busy]:before {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  box-sizing: border-box;
+  content: '';
+  height: 16px;
+  line-height: 16px;
+  margin-top: -7px; 
+  padding-left: 20px;
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  width: 100%;
+}
+
+fieldset .field {
+  background-color: #f4f4f6;
+  border-radius: 3px;
+  border: 2px solid #f4f4f6;
+  margin: 5px 0;
+  min-height: 50px;
+}
+
+fieldset .field.required {
+  -webkit-transition: border-right 200ms ease;
+}
+
+.field[data-invalid] {
+  border-color: #f5ccd6;
+  position: relative;
+}
+
+.field[data-invalid]:after {
+  background: #e71647 url('/assets/images/all@2x.png') no-repeat -287px -57px;
+  background-size: 319px 108px;
+  border: 2px solid #e71647;
+  border-radius: 0 2px 2px 0;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+}
+
+.field[data-invalid],
+.field[data-invalid] label {
+  color: #e71647;
+}
+
+fieldset .field[data-disabled] {
+  background-color: transparent;
+  margin: -3px;
+}
+
+fieldset label,
+fieldset [data-type=text] {
+  display: block;
+  vertical-align: middle;
+}
+
+fieldset label {
+  color: #636f7f;
+  padding-right: 5px;
+}
+
+fieldset label.medium {
+  min-width: 75px;
+}
+
+fieldset label.long {
+  min-width: 105px;
+}
+
+fieldset label.longer {
+  min-width: 110px;
+}
+
+fieldset [data-type=text] {
+  background-color: transparent;
+}
+
+fieldset .button:last-child {
+  margin-top: 10px;
+}
+
+.short .field {
+  width: 48%;
+}
+
+.short .field:first-child {
+  margin-right: 2.25%;
+}
+
+.short .field [data-type=text] {
+  padding-left: 5px;
+}
+
+.field[data-placeholdified] label {
+  -webkit-user-select: none;
+  cursor: text;
+  left: 15px;
+  position: absolute;
+  top: 10px;
+}
