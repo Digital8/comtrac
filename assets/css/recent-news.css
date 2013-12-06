@@ -1,0 +1,51 @@
+.recent.news {
+  border-top: 1px solid #e0e2e5;
+  padding: 1.75em 0 0;
+}
+
+.recent.news .item {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #fec73c;
+  height: 17.5em;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 25%;
+}
+
+.recent.news .item a {
+  -webkit-transition: background 80ms ease;
+  background: rgba(28,36,59,0.86);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 1.875em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+}
+
+.recent.news .item a:hover,
+.recent.news .item a:focus {
+  background: rgba(28,36,59,0.9);
+}
+
+.recent.news .item .heading {
+  color: #fec73c;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+.recent.news .item .date {
+  display: block;
+  font-weight: 600;
+  margin: 0.1333em 0;
+}
+
+.recent.news .item p {
+  margin: 0;
+}

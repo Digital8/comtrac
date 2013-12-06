@@ -1,4 +1,4 @@
-var placeholdify = function(input) {
+module.exports = function(input) {
   var type = input.nodeName.toLowerCase()
   var field = input.parentNode 
   var label = field.querySelector(

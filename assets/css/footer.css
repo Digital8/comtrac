@@ -13,7 +13,7 @@
 
 .footer,
 .footer a {
-  color: #fff; 
+  color: #a2aac6; 
   text-decoration: none;
 }
 
@@ -38,9 +38,44 @@
 }
 
 .footer .secondary.navigation a {
-  color: #fff;
+  color: #a2aac6;
   display: inline-block;
   padding: 0.425em 0;
+}
+
+.footer .field {
+  background-color: #1c243b;
+  border: none;
+  box-shadow:
+    inset 0 1px 0 rgba(0,0,0,0.1),
+    0 1px 0 #364162;
+  font-size: 1.142857em;
+  min-height: 0;
+}
+
+.footer .field label {
+  color: #a2aac6;
+  left: 10px;
+  top: 14px;
+}
+
+.footer .field [data-type=text] {
+  width: 60%;
+}
+
+.footer .field .button {
+  background-image: url(/assets/images/all@2x.png);
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  background-size: 27px 97px;
+  border-radius: 0 2px 2px 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 2em;
+  position: absolute;
+  right: 0;
+  text-indent: -999em;
+  top: 0;
 }
 
 .footer:last-child {
@@ -54,7 +89,7 @@
 
 .footer .tertiary.navigation,
 .footer .tertiary.navigation a {
-  color: #636f7f;
+  color: #a2aac6;
 }
 
 .footer .tertiary.navigation span {
@@ -76,41 +111,4 @@
 .footer a:hover,
 .footer a:focus {
   color: #fec73c;
-}
-
-.footer .contact-details {
-  position: relative;
-  top: 2px;
-}
-
-[data-contact-detail],
-[data-contact-detail] + dd {
-  float: left;
-  margin: 0 0 1em;
-}
-
-[data-contact-detail] {
-  background: url('/assets/images/all@2x.png') no-repeat;
-  background-size: 319px 108px;
-  clear: left;
-  height: 28px;
-  margin-right: 10px;
-  text-indent: -999em;
-  width: 28px;
-}
-
-[data-contact-detail=address] {
-  background-position: -227px -1px;
-}
-
-[data-contact-detail=phone] {
-  background-position: -260px -6px;
-}
-
-[data-contact-detail=fax] {
-  background-position: -76px -6px;
-}
-
-[data-contact-detail] + dd {
-  padding-top: 4px;
 }

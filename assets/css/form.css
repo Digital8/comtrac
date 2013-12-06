@@ -16,8 +16,8 @@ fieldset {
   line-height: 1.425em;
   margin: 0;
   max-width: 100%;
-  min-height: 46px;
-  padding: 10px 15px;
+  min-height: 45px;
+  padding: 10px;
   text-rendering: inherit;
   width: 100%;
 }
@@ -95,7 +95,7 @@ input[type=radio]:checked {
 
 .row {
   margin: 0;
-  padding: 15px 0;
+  padding: 8px 0;
 }
 
 .options {
@@ -145,7 +145,6 @@ fieldset .field {
   border-radius: 3px;
   border: 2px solid #f4f4f6;
   margin: 5px 0;
-  min-height: 50px;
 }
 
 fieldset .field.required {
@@ -226,7 +225,7 @@ fieldset .button:last-child {
 .field[data-placeholdified] label {
   -webkit-user-select: none;
   cursor: text;
-  left: 15px;
+  left: 10px;
   position: absolute;
   top: 10px;
 }

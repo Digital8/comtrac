@@ -1,6 +1,6 @@
 .section {
-  color: #636f7f;
-  padding: 90px 0;
+  border-top: 1px solid #e0e2e5;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -57,17 +57,10 @@
   width: 1px; 
 }
 
-.section .heading {
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.625em;
-  margin: 0;
-}
-
 .section .introduction {
-  color: #094075;
+  color: #f3b805;
   line-height: 1.333em;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.071428em;
   text-align: center;
 }
 

@@ -1,6 +1,7 @@
 body > .header {
   border-bottom: 1px solid #475273;
   border-bottom: 1px solid rgba(81,92,125,0.6);
+  max-height: 70px;
   min-height: 0;
   padding: 16px 0;
   position: relative;
@@ -15,7 +16,7 @@ body > .header .logo img,
 }
 
 body > .header .logo {
-  width: 360px;
+  max-width: 360px;
 }
 
 body > .header .primary.navigation {

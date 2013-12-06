@@ -46,6 +46,7 @@
 
 .primary.navigation > [data-has-dropdown]:hover > a,
 .primary.navigation > [data-has-dropdown]:focus > a {
+  border-color: transparent;
   color: #fec73c;
   z-index: 2;
 }
