@@ -16,10 +16,19 @@
 
 */
 
+::selection {
+  background-color: #fec73c;
+}
+
+::-moz-selection {
+  background-color: #fec73c;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  color: #364162;
+  background-color: #364162;
+  color: #fff;
   font: 400 16px/1.5em proxima-nova, sans-serif;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -50,17 +59,26 @@ strong {
 }
 
 .circle.list li {
+  padding: 0.375em 0;
   position: relative;
 }
 
+.circle.list li:first-child {
+  padding-top: 0;
+}
+
+.circle.list li:last-child {
+  padding-bottom: 0;
+}
+
 .circle.list li:before {
-  border: 1px solid #5faf00;
+  border: 1px solid #fec73c;
   border-radius: 50%;
   content: '';
   display: inline-block;
   height: 6px;
   left: 0;
-  margin: 0 0.625em 0 0.875em;
+  margin: 0 1.5em 0 0; 
   position: relative;
   top: 50%;
   vertical-align: middle;

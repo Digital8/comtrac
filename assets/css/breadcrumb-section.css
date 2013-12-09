@@ -1,0 +1,24 @@
+.breadcrumb.section {
+  text-align: center;
+}
+
+.breadcrumb .heading,
+.breadcrumb .parent {
+  font-size: 1.375em;
+  line-height: 1em;
+  margin: 0;
+}
+
+.breadcrumb .heading {
+  color: #364162;
+  font-weight: 600;
+}
+
+.breadcrumb .parent {
+  color: #6d789a;
+  text-decoration: none;
+}
+
+.breadcrumb .parent:after {
+  content: ' / ';
+}

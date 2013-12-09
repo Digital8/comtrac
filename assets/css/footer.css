@@ -1,10 +1,4 @@
 .footer {
-  background-attachment: scroll, fixed;
-  background-color: #252f4e;
-  background-image: url(/assets/images/noise.png),
-    url(/assets/images/concentric-circles-dark.png);
-  background-position: 50% 100%;
-  background-repeat: repeat, no-repeat;
   font-size: 0.875em;
   line-height: 1.333em;
   overflow: hidden;
@@ -92,8 +86,29 @@
   color: #a2aac6;
 }
 
+a[data-social]:before {
+  background: url('/assets/images/all@2x.png') no-repeat;
+  background-size: 27px 97px;
+  content: '';
+  display: inline-block;
+  height: 23px;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 23px;
+}
+
+a[data-social=facebook]:before {
+  background-position: -2px -75px;
+}
+
+a[data-social=twitter]:before {
+  background-position: -2px -38px;
+  margin-right: 6px;
+}
+
 .footer .tertiary.navigation span {
-  margin: 0 0.625em;
+  line-height: 23px;
+  margin: 0 0.875em;
 }
 
 .footer .tertiary.navigation span:first-child {

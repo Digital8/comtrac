@@ -1,0 +1,25 @@
+.emphasised {
+  background-attachment: scroll, fixed;
+  background-color: #252f4e;
+  background-position: 50% 25%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto auto, cover;
+  color: #fff;
+}
+
+.emphasised[data-image=seats] {
+  background-image:
+    url(/assets/images/noise.png),
+    url(/assets/images/seats.jpg)
+}
+
+.emphasised[data-image=circles] {
+  background-image:
+    url(/assets/images/noise.png),
+    url(/assets/images/concentric-circles-dark.png);
+}
+
+.emphasised .heading,
+.emphasised .introduction {
+  color: #fec73c;
+}

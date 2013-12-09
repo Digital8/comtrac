@@ -1,11 +1,10 @@
-.features {
+.features.section {
   background-attachment: scroll, fixed;
   background-image:
     url(/assets/images/noise.png),
     url(/assets/images/concentric-circles-light.png);
   background-position: 50% 100%;
   background-repeat: repeat, no-repeat;
-  padding: 1.875em 0;
   text-align: center;
 }
 

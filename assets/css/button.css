@@ -21,10 +21,10 @@
 
 .button:hover,
 .button:focus {
-  background-color: #004588;
-  border-color: #004588;
-  color: #fff;
-  text-shadow: none;
+  background-color: #eeb71c;
+  border-color: #eeb71c;
+  !color: #fff;
+  !text-shadow: none;
 }
 
 .button:focus {
@@ -51,6 +51,6 @@
 
 .play.button:hover span:after,
 .play.button:focus span:after {
-  border-left-color: #fff;
-  box-shadow: none;
+  !border-left-color: #fff;
+  !box-shadow: none;
 }

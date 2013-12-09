@@ -14,7 +14,7 @@
 .columns {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 15px;
 }
 
 .columns:first-child {
