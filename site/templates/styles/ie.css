@@ -102,9 +102,12 @@
 
 .ie fieldset [data-type=text] {
   line-height: 45px;
-  padding: 0!important;
+  padding: 0 0 0 10px!important;
 }
 
-.ie fieldset textarea {
+.ie fieldset textarea[data-type=text] {
+  line-height: 1.333em;
+  overflow: hidden;
+  padding: 13px 0 0 10px!important;
   min-width: 400px;
 }
