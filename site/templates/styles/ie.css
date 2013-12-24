@@ -59,3 +59,23 @@
       width:100%;
       background: url(../images/noise.png) repeat;
     }
+
+/*--------------------------------------------------------*/
+.ie .footer .field .button,
+.ie a[data-social]:before {
+  background-image: url(../images/all.png);
+}
+
+.ie .icon-circle[data-image]{
+  background-image: url(../images/integration-icons.png);
+}
+
+.faq .question:before,
+.faq .answer:before {
+  background: url(../images/faq-icons.png) no-repeat;
+}
+
+.ie .quote.section .heading:before,
+.ie .quote.section .heading:after{
+  background: url(../images/quote.png) no-repeat;
+}
