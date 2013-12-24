@@ -23,29 +23,34 @@
     background-image:
     url(../images/tablet-hands.jpg);
     background-position-y: 67%;
+    background-size: cover;
 }
 
 .emphasised[data-image=mobile-app]{
     background-image:
     url(../images/mobile-app.jpg);
+    background-size: cover;
 }
 
 .emphasised[data-image=criminal-investigations]{
     background-image:
     url(../images/criminal-investigations.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=electronic-notebook]{
     background-image:
     url(../images/ipad-woman.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=bridge]{
     background-image:
     url(../images/bridge.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=laptop]{
@@ -53,66 +58,77 @@
     url(../images/macbook-table.jpg);
     background-position: bottom;
     background-size: cover;
+    background-size: cover;
 }
 
 .emphasised[data-image=building]{
     background-image:
     url(../images/building.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=parliament]{
     background-image:
     url(../images/parliament.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=agreement]{
     background-image:
     url(../images/agreement.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=white-sheet]{
     background-image:
     url(../images/white-sheet.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=crime-scene]{
     background-image:
     url(../images/crime-scene.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=investigation-management]{
     background-image:
     url(../images/students.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=criminal-investigations]{
     background-image:
     url(../images/criminal-investigations.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=administrative-investigations]{
     background-image:
     url(../images/book.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=incident-investigations]{
     background-image:
     url(../images/firefighters.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised[data-image=regulatory-inspection]{
     background-image:
     url(../images/inspector-male.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .emphasised .heading,
@@ -247,9 +263,9 @@
 .app.section{
   border:0;
 }
-
-.highlighted[data-expanded]{
-  padding: 4.5em 0;
+ 
+.highlighted[data-expanded] {
+  padding: 6.95em 0;
 }
 
 .highlighted[data-image=demo]{

@@ -21,14 +21,10 @@ $('.dropdown').on('mouseout', function() {
   }, 1000)
 })
 
-$('.highlighted .button')
+$('.highlighted')
   .on('mouseover', function() {
-    $(this)
-      .closest('.highlighted')
-      .attr('data-expanded', true)
+    $(this).attr('data-expanded', true)
   })
   .on('mouseout', function() {
-    $(this)
-      .closest('.highlighted')
-      .removeAttr('data-expanded')
+    $(this).removeAttr('data-expanded')
   })
