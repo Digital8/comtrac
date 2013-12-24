@@ -147,7 +147,7 @@
 				$categoryPage = $pages->get('/blog-categories/');
 				$categories = $categoryPage->children('include=hidden');
 
-				echo '<div class="breadcrumb section">';
+				echo '<div class="breadcrumb news section">';
 				echo '	<div class="clear contained">';
 				echo '		<div class="six inline columns left">';
 				echo '			<a class="parent" href="' . $parentUrl . '">' . $parentTitle . '</a>';
