@@ -95,5 +95,6 @@
 .ie fieldset label,
 .ie fieldset [data-type=text] {
   display: inline-block;
+  vertical-align: top;
   width: auto;
 }
