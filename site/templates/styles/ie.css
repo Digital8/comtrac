@@ -79,3 +79,10 @@
 .ie .quote.section .heading:after{
   background: url(../images/quote.png) no-repeat;
 }
+
+/*--------------------------------------------------------*/
+.ie .fieldset label,
+.ie fieldset [data-type=text] {
+  display: inline-block;
+  width: auto;
+}

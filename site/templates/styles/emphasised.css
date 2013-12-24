@@ -248,8 +248,8 @@
   border:0;
 }
 
-.highlighted[data-expanded]{
-  padding: 4.5em 0;
+.highlighted[data-expanded] {
+  padding: 6.95em 0;
 }
 
 .highlighted[data-image=demo]{
