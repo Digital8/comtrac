@@ -94,7 +94,17 @@
 
 .ie fieldset label,
 .ie fieldset [data-type=text] {
+  border: none!important;
   display: inline-block;
   vertical-align: top;
   width: auto;
+}
+
+.ie fieldset [data-type=text] {
+  line-height: 45px;
+  padding: 0!important;
+}
+
+.ie fieldset textarea {
+  min-width: 400px;
 }
