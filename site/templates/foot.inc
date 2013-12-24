@@ -48,7 +48,7 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 
 	      <div class="three inline columns">
 	        <h3 class="heading">Subscribe</h3>
-	        <p>Get COMtrack updates in your email.</p>
+	        <p>Get COMtrac updates in your email.</p>
 	        <form method="post" id="newsletterForm" action="./" novalidate>
 	          <fieldset>
 	          	<input type="hidden" id="_post_token" name="<?php echo $tokenName ?>" value="<?php echo $tokenValue ?>"/>
