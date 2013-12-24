@@ -183,18 +183,13 @@
 	}
 	
 	.primary.navigation > li.current > a {
-	  font-weight: 500;
+	  font-weight: 600;
 	}
 
 	.primary.navigation > [data-has-dropdown] > a:after {
 	  right: 0.2em;
 	  top: 50%;
 	  width: 0;
-	}
-
-	
-	.primary.navigation > [data-has-dropdown] > a + .dropdown {
-	  padding: 1em 0;
 	}
 
 	.primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
