@@ -70,9 +70,13 @@
   background-image: url(../images/integration-icons.png);
 }
 
-.faq .question:before,
-.faq .answer:before {
+.ie .faq .question:before,
+.ie .faq .answer:before {
   background: url(../images/faq-icons.png) no-repeat;
+}
+
+.ie .faq .answer:before {
+  background-position: bottom;
 }
 
 .ie .quote.section .heading:before,
@@ -80,8 +84,15 @@
   background: url(../images/quote.png) no-repeat;
 }
 
-/*--------------------------------------------------------*/
-.ie .fieldset label,
+.ie .quote.section .heading:before{
+    background-position: bottom;
+}
+
+.ie select[data-type=text] {
+  background: url('../images/select.png') #f4f4f6 no-repeat 94% 50%;
+}
+
+.ie fieldset label,
 .ie fieldset [data-type=text] {
   display: inline-block;
   width: auto;
