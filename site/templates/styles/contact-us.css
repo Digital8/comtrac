@@ -1,0 +1,68 @@
+.section .contact-details {
+  color: #fff;
+  padding: 5em 0;
+  text-align: left;
+}
+
+.section .contact-details li {
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 200;
+  line-height: 1em;
+  margin: 0 0 1.5em;
+  width: 50%;
+  vertical-align: top;
+}
+
+.section .contact-details .title {
+  color: #5faf00;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0 0 0.25em;
+  text-transform: uppercase;
+}
+
+.contained.city{
+  margin-bottom: 50px;
+}
+
+.contact .heading {
+  font-size: 24px;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.contact #quickEnquiry fieldset [data-invalid] label {
+  border-radius: 3px 0 0 3px;
+}
+
+.contact #quickEnquiry fieldset .field {
+  background-color: #1c243b;
+  border: #1c243b;
+}
+
+.contact #quickEnquiry [data-type=text] {
+  background-color: rgba(28,36,59,0.7);
+  border: 2px solid #1c243b;
+}
+
+.contact #quickEnquiry [data-focused] label {
+  color: #ffc821;
+}
+
+.contact #quickEnquiry [data-focused] [data-type=text] {
+  background-color: #1c243b;
+}
+
+.contact #quickEnquiry fieldset textarea {
+  max-width: 509px;
+}
+
+.contact #quickEnquiry .button {
+  min-width: 170px;
+}
+
+.contact #quickEnquiry .message {
+  text-align: left;
+}

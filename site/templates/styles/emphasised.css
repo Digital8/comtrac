@@ -1,0 +1,523 @@
+.emphasised {
+  background-attachment: scroll, fixed;
+  background-color: #252f4e;
+  background-position: 50% 25%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto auto, cover;
+  color: #fff;
+}
+
+.emphasised[data-image=seats] {
+  background-image:
+    url(../images/noise.png),
+    url(../images/seats.jpg)
+}
+
+.emphasised[data-image=circles] {
+  background-image:
+    url(../images/noise.png),
+    url(../images/concentric-circles-dark.png);
+}
+
+.emphasised[data-image=tablet-hands]{
+    background-image:
+    url(../images/tablet-hands.jpg);
+    background-position-y: 67%;
+}
+
+.emphasised[data-image=mobile-app]{
+    background-image:
+    url(../images/mobile-app.jpg);
+}
+
+.emphasised[data-image=criminal-investigations]{
+    background-image:
+    url(../images/criminal-investigations.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=electronic-notebook]{
+    background-image:
+    url(../images/ipad-woman.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=bridge]{
+    background-image:
+    url(../images/bridge.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=laptop]{
+    background-image:
+    url(../images/macbook-table.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.emphasised[data-image=building]{
+    background-image:
+    url(../images/building.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=parliament]{
+    background-image:
+    url(../images/parliament.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=agreement]{
+    background-image:
+    url(../images/agreement.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=white-sheet]{
+    background-image:
+    url(../images/white-sheet.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=crime-scene]{
+    background-image:
+    url(../images/crime-scene.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=investigation-management]{
+    background-image:
+    url(../images/students.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=criminal-investigations]{
+    background-image:
+    url(../images/criminal-investigations.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=administrative-investigations]{
+    background-image:
+    url(../images/book.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=incident-investigations]{
+    background-image:
+    url(../images/firefighters.jpg);
+    background-position: center;
+}
+
+.emphasised[data-image=regulatory-inspection]{
+    background-image:
+    url(../images/inspector-male.jpg);
+    background-position: center;
+}
+
+.emphasised .heading,
+.emphasised .introduction,
+.emphasised .subheading {
+  color: #fec73c;
+}
+.emphasised .heading,
+.emphasised .introduction,
+.emphasised .subheading {
+  color: #fec73c;
+}
+
+/*----------------------------------------------*/
+.enquiry.section .heading,
+.benefit h3.heading{
+    text-align: left;
+}
+
+.enquiry.section .columns .introduction{
+  color: #f3b805;
+}
+
+
+/*----------------------------------------------*/
+.benefits h2.heading {
+  margin-bottom: 1.75em;
+}
+
+.benefit h3.heading {
+  font: 400 24px/1em open-sans, sans-serif;
+}
+
+.benefit .circle.list,
+.features .circle.list,
+.app .circle.list,
+.faq .circle.list,
+.ethos .circle.list,
+.course .circle.list{
+  list-style: outside none;
+}
+
+.benefit .circle.list li,
+.features .circle.list li,
+.app .circle.list li,
+.faq .circle.list li,
+.ethos .circle.list li,
+.course .circle.list li{
+  padding-left: 1.2em;
+  line-height:1.625em;
+}
+
+.benefit .circle.list li:before,
+.features .circle.list li:before,
+.app .circle.list li:before,
+.faq .circle.list li:before,
+.ethos .circle.list li:before,
+.course .circle.list li:before{
+  margin: 0 0.7em 0 -1.2em;
+}
+
+.features .circle.list li:before {
+  border: 1px solid #515c7d;
+}
+
+
+/*----------------------------------------------*/
+.integration.section {
+  text-align:center;
+}
+.icon-circle[data-image]{
+  width:120px;
+  height:120px;
+  background-color:#515c7d;
+  margin:2em auto;
+  border-radius: 60px;
+
+  background-image: url(../images/integration-icons@2x.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 82px 480px;
+}
+
+.icon-circle[data-image=inspection]{
+  background-position: 50% 0%;
+}
+
+.icon-circle[data-image=web]{
+  background-position: 50% 33.333%;
+}
+
+.icon-circle[data-image=cloud]{
+  background-position: 50% 70%;
+}
+
+.icon-circle[data-image=database]{
+  background-position: 50% 100%;
+}
+
+
+/*----------------------------------------------*/
+.app .circle.list,
+.features .circle.list{
+  margin:0;
+}
+
+.app .list.heading{
+  margin-top:5em;
+}
+.app .introduction.main{
+  color:#ffffff;
+}
+
+.app .circle.list{
+  list-style: outside none;
+
+}/*----------------------------------------------*/
+
+.highlighted {
+  -webkit-transition: padding 250ms ease;
+  -moz-transition: padding 250ms ease;
+  transition: padding 250ms ease;
+  background-attachment: scroll;
+  background-color: #fec73c;
+  background-position: 50% 25%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto auto, cover;
+  color: #fff;
+}
+
+.highlighted.section,
+.app.section{
+  border:0;
+}
+
+.highlighted[data-expanded]{
+  padding: 4.5em 0;
+}
+
+.highlighted[data-image=demo]{
+    background-image:
+    url(../images/macbook.jpg);
+    background-position-y: 50%;
+}
+
+.highlighted .heading{
+  color: #364162;
+  margin:0.65em;
+}
+
+.highlighted .heading span{
+  margin:0 1.5em 0 0;
+}
+
+/*--------------------------------------------*/
+.emphasised.solutions.section{
+  padding: 7em 0;
+}
+
+.solutions .narrow.contained,
+.solutions.section .conclusion{
+  text-align: center;
+}
+
+.features.section .divider,
+.solutions.section .divider{
+  margin:3em 0;
+}
+
+.solutions.emphasised.section .divider{
+  background-color:#515c7d;
+}
+
+.quote.section .heading span{
+ 
+  
+}
+.quote.section .heading{
+  color:#ffffff;
+  font-style: italic;
+  font-size: 1.6em;
+  margin:0;
+}
+
+.quote.section .heading:before,
+.quote.section .heading:after{
+  background: url(../images/quote@2x.png) no-repeat;
+  background-size: 24px 48px;
+  content:"";
+  display: inline-block;
+  height: 24px;
+  vertical-align: top;
+  width: 24px;
+  margin:0 5px;
+}
+
+
+.quote.section .heading:before{
+    background-position: 0 -24px;
+}
+
+.quote.section .attribution{
+  color:#fec73c;
+  font-weight: bold;
+  font-size: 1em;
+  text-align:center;
+}
+
+.logo-right{
+  float:right;
+  margin-right:10px;
+}
+
+.emphasised.courses{
+    padding: 0;
+}
+.emphasised.course{
+  background: #364162;
+  padding:0;
+}
+
+.courses .course {
+  border-top: 1px solid #515c7d;
+  padding: 60px 15px 60px 15px;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  -o-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+}
+
+.section.course:hover{
+  background-color: #515c7d;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  -o-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+}
+
+.course .heading{
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.courses .section:first-child {
+  border: 0;
+}
+.courses .section:last-child {
+  border-bottom: 1px solid #fec73c;
+}
+
+.courses .course-name {
+  padding-left: 15px
+}
+
+.courses .course-details {
+  padding-right: 15px
+}
+
+.courses .circle-list{
+  line-height: 1.2em;
+}
+
+.courses .button{
+  margin-top: 30px;
+}
+
+/*---News-------------------------------------------------*/
+
+.emphasised.news.section{
+  padding:25px 0;
+}
+
+.news.breadcrumb.section .left{
+  text-align: left;
+}
+
+.news.breadcrumb.section .columns:first-child {
+  padding-left: 15px;
+}
+
+.news.breadcrumb.section .columns:last-child {
+  padding-right: 15px;
+}
+
+.news.breadcrumb.section .columns {
+  max-width:800px;
+}
+
+.news .contained{
+  padding:0;
+}
+
+.news .newsbox{
+  height:255px;
+  padding:15px;
+  max-width:800px;
+}
+
+.news .newsbox .content{
+  background:#1c243b;
+  height: 100%;
+  width:100%;
+  overflow:hidden;
+}
+
+.newsbox .heading,
+.newsbox p {
+    text-align: left;
+    margin:0 20px 15px 20px;
+}
+.newsbox .heading{
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding: 20px 0 10px;
+}
+
+.news .newsbox:first-child{
+  height: 510px;
+}
+
+.news .newsbox:first-child .heading,
+.news .newsbox:first-child p{
+  margin:0 30% 0 40px;
+  
+}
+
+.newsbox:first-child .heading{
+    font-size: 2.2em;
+    padding: 40px 0 10px;
+}
+.newsbox:first-child p{
+    font-size: 1.6em;
+}
+
+.news input[data-type=text],
+.news select[data-type=text],
+.news label[for=search]{
+  margin-top: -10px;
+  margin-bottom: -12px;
+}
+
+.news.post .date{
+  text-align: center;
+  font-size: 24px;
+}
+
+.news.post .heading{
+  margin-bottom: 0.2em;
+  font-size:34px;
+}
+
+/*-FAQ---------------------------------------------*/
+
+.faq.section .heading{
+  text-align: left;
+  font-size: 24px;
+}
+
+.faq .question,
+.faq .answer {
+  margin-left:48px;
+}
+
+.faq .question:before,
+.faq .answer:before {
+  background: url(../images/faq-icons@2x.png) no-repeat;
+  background-size: 32px 65px;
+  content:"";
+  display: inline-block;
+  height: 32px;
+  vertical-align: top;
+  width: 32px;
+  margin:0 16px 0 -48px;
+}
+
+.faq .answer:before{
+  background-position-y: -33px;
+}
+
+.faq .contained{
+  margin-top:3em;
+  margin-bottom:3em;
+}
+
+.faq .circle.list{
+  margin-left: 42px;
+}
+
+/*-Ethos------------------------------------------*/
+
+.ethos .list.heading{
+  font-size:1.5em;
+}
+
+.ethos .introduction{
+  color:#fff;
+}
+
+.ethos.section .divider{
+  margin: 8em 0 6em 0;
+}
+
+/*-Contact----------------------------------------------*/
+
+.contact.section [data-type=text] {
+  
+}

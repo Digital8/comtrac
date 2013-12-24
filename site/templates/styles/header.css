@@ -1,0 +1,39 @@
+body > .header {
+  border-bottom: 1px solid #475273;
+  border-bottom: 1px solid rgba(81,92,125,0.6);
+  max-height: 70px;
+  min-height: 0;
+  padding: 16px 0;
+  position: relative;
+  z-index: 1;
+}
+
+body > .header .logo,
+body > .header .logo img,
+.primary.navigation,
+.tagline{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.primary.navigation {
+  display: block;
+}
+
+body > .header .logo {
+  max-width: 360px;
+}
+
+body > .header .tagline {
+  font-size: 17px;
+  color: #fec73c;
+}
+
+body > .header .primary.navigation,
+body > .header .tagline, .toggleMenu {
+  margin: 20px 0;
+}
+
+body > .header .contained {
+  position: static;
+}

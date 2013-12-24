@@ -1,0 +1,122 @@
+.primary.navigation > li {
+  float: left;
+  padding-bottom: 42px;
+  margin: 0 0.5em;
+}
+
+.primary.navigation > li > a {
+  color: #fff;
+  font-size: 0.875em;
+  font-weight: 600;
+  padding: 0.5em 0.75em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.primary.navigation > [data-has-dropdown]:hover:after {
+  border-style: solid;
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent #1c243b transparent;
+  content: '';
+  left: -58%;
+  margin-right: -14px;
+  position: relative;
+  top: 36px;
+}
+
+.primary.navigation > [data-has-dropdown] > a {
+  padding-right: 1.25em;
+}
+
+.primary.navigation > li > a:hover,
+.primary.navigation > li > a:focus {
+  color: #fec73c;
+}
+
+.primary.navigation > li.current > a {
+  border: 2px solid #fec73c;
+  border-radius: 2px;
+  color: #fec73c;
+  font-weight: 700;
+}
+
+.primary.navigation > [data-has-dropdown] > a:after {
+  border-color: #ffffff transparent transparent transparent;
+  border-style: solid;
+  border-width: 4px 3px 0 3px;
+  content: '';
+  height: 0;
+  margin-top: -3px;
+  position: absolute;
+  right: 0.3333em;
+  top: 17px;
+  width: 0;
+}
+
+.primary.navigation > li.current[data-has-dropdown] > a:after {
+  border-color: #fec73c transparent transparent transparent;
+}
+
+.primary.navigation > [data-has-dropdown]:hover > a,
+.primary.navigation > [data-has-dropdown]:focus > a {
+  border-color: transparent;
+  color: #fec73c;
+  z-index: 2;
+}
+
+.primary.navigation > [data-has-dropdown]:hover > a:after,
+.primary.navigation > [data-has-dropdown]:focus > a:after {
+  border-color: #fec73c transparent transparent transparent;
+
+}
+
+.primary.navigation > [data-has-dropdown] > a + .dropdown {
+  display: none;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 1;
+}
+
+.primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
+.primary.navigation > [data-has-dropdown]:focus > a + .dropdown {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Icon';
+  src: url('../fonts/menu.eot');
+  src: url('../fonts/menu.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/menu.woff') format('woff'),
+    url('../fonts/menu.ttf') format('truetype'),
+    url('../fonts/menu.svg#menu') format('svg');
+}
+
+.toggleMenu {
+  color: #fff;
+  display: none;
+  text-decoration: none;
+  position: relative;
+  top: 1px;
+  font-family: 'Icon';
+  -webkit-font-smoothing: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toggleMenu:before {
+  content: "\e600";
+  display: inline-block;
+  font-size: 22px;
+}
+
+.toggleMenu .text {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+}

@@ -1,0 +1,609 @@
+/**
+* MEDIA QUERY 
+*
+**/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px)  and (max-device-width : 480px) {
+
+
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+
+}
+
+
+/* Limit for main nav bar ----------- */
+@media only screen and (max-width : 1024px) {
+  body > .header .logo,
+  body > .header .logo img,
+  .primary.navigation,
+  .tagline, nav {
+    display: block;
+    vertical-align: middle;
+  }
+
+  nav {
+    padding-right: 50px;
+  }
+
+  .primary.navigation {
+    display: none;
+  }
+
+  .toggleMenu {
+    display: block;
+    font-size: 16px;
+  }
+
+
+  body > .header .tagline {
+    font-size: 13px;
+    color: #fec73c;
+  }
+
+  .primary.navigation {
+    background-color: #364162;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .primary.navigation > li {
+    float: none;
+  }
+
+  .primary.navigation > li > a {
+    font-size: 0.8em;
+    font-weight: 400;
+    padding: 0.3em 0.65em;
+  }
+
+
+  .primary.navigation > [data-has-dropdown] > a {
+    padding-right: 1.20em;
+  }
+
+  
+  .primary.navigation > li.current > a {
+    font-weight: 500;
+  }
+
+  .primary.navigation > [data-has-dropdown] > a:after {
+    right: 0.2em;
+    top: 50%;
+    width: 0;
+  }
+
+  
+  .primary.navigation > [data-has-dropdown] > a + .dropdown {
+      display: block;
+    left: auto;
+    padding: 0;
+    position: static;
+    top: 0;
+    z-index: 1;
+  }
+
+  .primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
+  .primary.navigation > [data-has-dropdown]:focus > a + .dropdown {
+    display: block;
+  }
+
+  .dropdown {
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 0.7em;
+    line-height: 1.16667em;
+    margin-left: -75px;
+    min-width: 150px;
+    text-align: center;
+  }
+
+  .header .three.columns {
+    max-width: 400px;
+    width: 30%;
+  }
+
+  .header .five.columns {
+    max-width: 400px;
+      width: 36.66667%;
+  }
+}
+
+
+
+/* Deskop */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .primary.navigation > li {
+    margin: 0 0.4em;
+  }
+
+  .primary.navigation > li > a {
+    font-size: 0.8em;
+    font-weight: 400;
+    padding: 0.3em 0.65em;
+  }
+
+
+  .primary.navigation > [data-has-dropdown] > a {
+    padding-right: 1.20em;
+  }
+
+  
+  .primary.navigation > li.current > a {
+    font-weight: 500;
+  }
+
+  .primary.navigation > [data-has-dropdown] > a:after {
+    right: 0.2em;
+    top: 50%;
+    width: 0;
+  }
+
+  
+  .primary.navigation > [data-has-dropdown] > a + .dropdown {
+    padding: 2em 0 0.3em;
+  }
+
+  .primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
+  .primary.navigation > [data-has-dropdown]:focus > a + .dropdown {
+    display: block;
+  }
+
+  body > .header .tagline {
+    font-size: 14px;
+    color: #fec73c;
+  }
+}
+
+
+/* Mobile -----------------------------*/
+@media (max-width: 767px){
+
+  .two.columns,
+  .three.columns,
+  .four.columns,
+  .five.columns,
+  .six.columns,
+  .seven.columns,
+  .eight.columns,
+  .nine.columns,
+  .ten.columns{
+    width: 100%;
+    max-width:100%;
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header .three.columns {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .header .five.columns {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  img.extend{
+    max-width: 100%
+  }
+
+  .section,
+  .emphasised.solutions.section{
+    padding:30px 0;
+  }
+
+  .row{
+    padding:0;
+  }
+
+  .heading,
+  .features h2.heading{
+    font-size: 24px;
+    margin-bottom: 0.5em;  
+  }
+  .introduction{
+    font-size:18px;
+  }
+
+  .hero.section{
+    margin-top: -110px;
+    padding: 120px 0 30px;
+  }
+
+  .hero .item{
+    padding:15px;
+    text-align: center;
+    height:auto;
+  }
+  .hero .item .heading {
+    width:100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features.section .divider,
+  .solutions.section .divider,
+  .section .divider{
+    margin:20px 0 20px
+  }
+
+  .features .list.heading,
+  .app .list.heading{
+    margin-top: 0px;
+  }
+
+  .feature {
+    margin-bottom: 0.75em;
+    padding-bottom: 0.5em;
+  }
+
+  .feature .heading {
+    padding:0 1em;
+  }
+
+  .feature p{
+    height:auto;
+  }
+
+  .recent.news .item,
+  .for.item{
+    width:100%;
+    position:relative;
+  }
+
+  .for.item{
+    height: auto;
+    padding:2em 0;
+  }
+
+  .for.item .plain.list,
+  .for.item .heading{
+    padding: 0 15px;
+  }
+
+  .enquiry fieldset{
+    margin-bottom: 15px;
+  }
+
+  .recent.news.section .button {
+    margin:-7px auto 16px auto;
+    width:140px;
+  }
+
+  .recent.news.section .button,
+  .recent.news.section .inline.heading {
+    float:none;
+    text-align: center;
+    display:block;
+  }
+
+  .circle.list {
+    list-style: outside none;
+    margin:0;
+  }
+  .circle.list li{
+    padding-left: 1.2em;
+    line-height:1.5em;
+  }
+  .circle.list li:before{
+    margin: 0 0.7em 0 -1.2em;
+  }
+
+  .benefits h2.heading{
+    margin-bottom: 0;
+  }
+  .benefit h3.heading{
+    font-size: 20px;
+  }
+
+  .highlighted.section{
+    padding:10px 0;
+  }
+
+  .highlighted .heading span{
+    margin:0 0 0.5em 0;
+    display:block;
+  }
+
+  .emphasised.app.section img{
+    max-width: 50%;
+    display:block;
+    float:none;
+    margin:auto;
+  }
+
+  .icon-circle[data-image]{
+    margin:0 auto;
+  }
+
+  .news .newsbox,
+  .news .newsbox:first-child{
+    height: auto;
+  }
+
+  .news .contained{
+    padding:0 15px;
+  }
+
+  .news .newsbox p{
+    padding-bottom: 20px;
+  }
+
+  .news .newsbox .heading {
+    margin-bottom:0;
+    padding-bottom:0;
+  }
+
+  .news .newsbox:first-child .heading,
+  .news .newsbox:first-child p{
+    margin:0 20px;
+    
+  }
+
+  .newsbox:first-child .heading{
+      font-size: 24px;
+      padding: 20px 0 5px;
+  }
+  .newsbox:first-child p{
+      font-size: 1em;
+      padding-bottom:20px;
+  }
+
+  .news.breadcrumb.section .columns:first-child,
+  .news.breadcrumb.section .columns:last-child{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .news.breadcrumb.section select{
+    margin: 0 0 15px;
+  }
+
+  .news.breadcrumb.section .left{
+    text-align: center;
+  }
+
+  .footer .tertiary.navigation{
+    text-align:center;
+  }
+  .footer .tertiary.navigation span:first-child,
+  .footer .tertiary.navigation span:last-child {
+    display:block;
+  }
+
+  .footer .tertiary.navigation span{
+    line-height: 2.5em;
+    white-space:nowrap;
+  }
+
+  .footer .tertiary.navigation{
+        padding-bottom:30px;
+        padding-top:0;
+  }
+
+  .footer .secondary.navigation {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .footer .secondary.navigation .three.columns:last-child{
+    text-align:left;
+  }
+
+  .footer .agency{
+    float:none;
+    margin-top:20px;
+  }
+  .footer .secondary.navigation .heading{
+    margin-bottom: 10px;
+  }
+
+  .courses .course {
+    padding: 30px 0;
+  }
+
+  .course .heading{
+    margin-bottom:5px;
+  }
+
+  .course .heading{
+    margin-bottom:5px;
+  }
+
+  .course .button{
+    margin-top: 16px;
+  }
+
+  .logo-right{
+    margin: auto;
+    display: block;
+    float:none;
+  }
+
+  .contained.city{
+    margin-bottom: 20px;
+  }
+
+  .contact .heading{
+    margin-bottom:0px;
+  }
+
+  .contact .button{
+    width:100%;
+    margin-top:15px;
+  }
+
+  .enquiry .button{
+    margin:10px auto;
+    display:block;
+    float:none;
+  }
+
+  .toggleMenu {
+    background-color:#364162;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+    margin-left:5px;
+    margin-right:5px;
+    position: absolute;
+    top: 5px;
+    left: 80%;
+  }
+
+}
+
+
+/* Tablet ---------------------------*/
+
+@media (min-width:768px) and (max-width: 991px){
+
+  .circle.list {
+    list-style: outside none;
+    margin:0;
+  }
+  .circle.list li{
+    padding-left: 1.2em;
+    line-height:1.5em;
+  }
+  .circle.list li:before{
+    margin: 0 0.7em 0 -1.2em;
+  }
+
+  .hero.section{
+    margin-top: -110px;
+    padding: 150px 0 30px;
+  }
+
+  .breadcrumb.section{
+    padding:40px 0;
+  }
+
+  .hero .item{
+    padding:50px;
+    text-align: center;
+    height:auto;
+  }
+  .hero .item .heading {
+    width:100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features.section .divider, .solutions.section .divider {
+    margin: 2em 0;
+  }
+
+  .feature.columns:first-child,
+  .feature.columns:last-child,
+  .recent.news .twelve.columns:first-child {
+    padding-right: 15px;
+    padding-left:15px;
+  }
+
+  .feature.three.columns,
+  .recent.news .item,
+  .for.item{
+    width:50%;
+    max-width: 600px;
+  }
+
+  .feature p{
+    height: 9em;
+  }
+
+  .for.item{
+    padding:2em 0;
+  }
+
+  .for.item .plain.list,
+  .for.item .heading{
+    padding: 0 30px;
+  }
+
+  .software.section .heading{
+    margin-top:0;
+    margin-bottom:0.5em;
+  }
+
+  .software.section img.extend{
+    max-width:100%;
+  }
+
+  .icon-circle[data-image]{
+    margin:1em auto;
+  }
+
+  .emphasised.solutions.section{
+    padding:3.5em 0;
+  }
+
+  .recent.news.section .twelve.columns:first-child{
+    padding-left: 15px;
+  }
+
+  .news.section .three.columns{
+    max-width:800px;
+    width: 33.333%;
+
+  }
+  .news.section .six.columns{
+    max-width:800px;
+    width: 66.666%;
+  }
+
+  .newsbox .heading {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding: 20px 0 0px;
+    }
+
+  .news.breadcrumb.section .six.columns {
+    max-width: 800px;
+    width: 33.33%;
+  }
+
+  .news.breadcrumb.section .three.columns {
+    max-width: 800px;
+    width: 33.33%;
+  }
+
+  .enquiry .button{
+    margin:10px auto;
+    display:block;
+    float:none;
+  }
+
+}
+
+
+
+
+/* Desktop ---------------------------*/
+
+@media (max-width: 1199px){
+
+}

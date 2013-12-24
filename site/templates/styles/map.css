@@ -1,0 +1,58 @@
+.section .map {
+  position: relative;
+  z-index: 0;
+}
+
+.section .map .element {
+  -webkit-transition: opacity 1.5s ease;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.section .map .element img {
+  max-width: none;
+}
+
+.section .large.map {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.section .large.map .element {
+  background-color: #0d4d83!important;
+}
+
+.section .small.map {
+  background-color: #e9e5dc;
+  border: 10px solid #1c82bc;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgba(60,70,90,0.1);
+  height: 300px;
+  left: 50%;
+  margin-left: -250px;
+  top: -10px;
+  width: 300px;
+}
+
+.section .small.map .element {
+  -webkit-mask-image: url(../images/map-circle.svg);
+}
+
+[data-loading].map {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+[data-loading].small.map {
+  background-image: url(../images/small-map-throbber@2x.gif);
+}
+
+[data-loading].large.map {
+  background-image: url(../images/large-map-throbber@2x.gif);
+}

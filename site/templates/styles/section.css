@@ -1,0 +1,113 @@
+.section {
+  background-color: #fff; 
+  border-top: 1px solid #e0e2e5;
+  color: #364162;
+  padding: 60px 0;
+  position: relative;
+}
+
+.section[data-image=circles] {
+  background-attachment: scroll, fixed;
+  background-image:
+    url(../images/noise.png),
+    url(../images/concentric-circles-light.png);
+  background-position: 50% 100%;
+  background-repeat: repeat, no-repeat;
+}
+
+.section.bottom-heavy {
+  padding-bottom: 55px 0 60px;
+}
+
+.section .secondary.navigation {
+  text-align: right;
+}
+
+.section .secondary.navigation a {
+  color: #636f7f;
+  display: block;
+  line-height: 1.25em;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  position: relative;
+}
+
+.section .secondary.navigation a:hover,
+.section .secondary.navigation a:focus {
+  color: #5faf00;
+}
+
+.section .secondary.navigation a:after {
+  background-color: #5faf00;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 2px;
+}
+
+.section .secondary.navigation a:hover:after,
+.section .secondary.navigation a:focus:after {
+  background-color: #77c425;
+  height: 100%;
+  top: 0;
+}
+
+.columns[data-has-navigation] + .columns {
+  position: relative;
+}
+
+.columns[data-has-navigation] + .columns:before {
+  background-color: #e0e2e5;
+  content: '';
+  display: block;
+  height: 100%;
+  left: -18px;
+  position: absolute;
+  width: 1px; 
+}
+
+.section .introduction {
+  color: #515c7d;
+  line-height: 1.333em;
+  margin-bottom: 1.071428em;
+  text-align: center;
+}
+
+.section .heading{
+  text-align:center;
+}
+
+.section .list.heading{
+  text-align: left;
+}
+
+.section .divider{
+  height:1px;
+  background: #dadde8;
+  margin:25px 0 60px;
+}
+
+.section .columns .introduction {
+  text-align: left;
+}
+
+.section p {
+  line-height: 1.625em;
+  margin:  0 0 1.5em;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.section .button {
+  min-width: 140px;
+}
+
+.news a, .news a:hover, .news a:focus,
+.news a .content p, .news .content a:hover p, .news .content a:focus p {
+  text-decoration: none;
+  color: #ffffff;
+}

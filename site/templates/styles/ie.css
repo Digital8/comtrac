@@ -1,0 +1,61 @@
+.ie .emphasised {
+  background-attachment: scroll;
+  background-color: #252f4e;
+  background-position: 50% 25%;
+  background-repeat: repeat;
+  background-size: auto auto;
+  color: #fff;
+}
+
+.ie .emphasised[data-image]{
+    position: relative;
+}
+
+.ie .hero .item[data-image=scales] {
+  background-image: url(../images/scales.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 1200px;
+}
+
+.ie .emphasised[data-image=seats] {
+  background: url(../images/seats.jpg) fixed no-repeat;
+}
+    .ie .emphasised[data-image=seats]:before {
+      content:'';
+      position:absolute;
+      height:100%;
+      width:100%;
+      top:0;
+      background: url(../images/noise.png) repeat;
+    }
+
+
+.ie .emphasised[data-image=circles] {
+  background: url(../images/concentric-circles-dark.png) fixed no-repeat;
+  background-position: 50% 25%;
+}
+    .ie .emphasised[data-image=circles]:before {
+      content:'';
+      position:absolute;
+      height:100%;
+      width:100%;
+      top:0;
+      background: url(../images/noise.png) repeat;
+    }
+
+.ie .features.section {
+  background-attachment: fixed;
+  background-image: url(../images/concentric-circles-light.png);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-color: #f4f5f8;
+  position:relative;
+}
+    .ie .features.section:before {
+      content:'';
+      position:absolute;
+      height:100%;
+      width:100%;
+      background: url(../images/noise.png) repeat;
+    }

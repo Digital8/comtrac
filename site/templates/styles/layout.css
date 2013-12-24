@@ -1,0 +1,91 @@
+.contained {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  margin: 0 auto;
+  max-width: 1230px;
+  padding-left:15px;
+  padding-right: 15px;
+  position: relative;
+  z-index: 0;
+}
+
+.narrow.contained {
+  max-width: 780px; 
+}
+
+.columns {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.columns:first-child {
+  padding-left: 0;
+}
+
+.columns:last-child {
+  padding-right: 0;
+}
+
+.columns.flush {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.columns.inline {
+  float: left;
+}
+
+.two.columns {
+  max-width: 200px;
+  width: 16.66667%;
+}
+
+.three.columns {
+  max-width: 300px;
+  width: 25%;
+}
+
+.four.columns {
+  max-width: 400px;
+  width: 33.33333%;
+}
+
+.five.columns {
+  max-width: 500px;
+  width: 41.66667%;
+}
+
+.six.columns {
+  max-width: 600px;
+  width: 50%;
+}
+
+.seven.columns {
+  max-width: 700px;
+  width: 58.33333%;
+}
+
+.eight.columns {
+  max-width: 800px;
+  width: 66.33333%;
+}
+
+.nine.columns {
+  max-width: 900px;
+  width: 75%;
+}
+
+.ten.columns {
+  max-width: 1000px;
+  width: 83.3333%;
+}
+
+.twelve.columns {
+  max-width: 1200px;
+  width: 100%;
+}

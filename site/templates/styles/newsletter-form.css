@@ -1,0 +1,7 @@
+#newsletterForm .field[data-invalid] {
+  border: 2px solid;
+}
+
+#newsletterForm .field[data-invalid]:after {
+  content: none;
+}

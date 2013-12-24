@@ -1,0 +1,209 @@
+/**
+* MEDIA QUERY 
+*
+**/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px)  and (max-device-width : 480px) {
+
+
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+
+}
+
+
+/* Limit for main nav bar ----------- */
+@media only screen and (max-width : 1070px) {
+	body > .header .logo,
+	body > .header .logo img,
+	.primary.navigation,
+	.tagline, nav {
+	  display: block;
+	  vertical-align: middle;
+	}
+
+  body > .header .logo {
+    margin: 12px 0;
+    vertical-align: middle;
+    width: 240px;
+  }
+
+  .hero.section {
+    padding: 140px 0 32px;
+  }
+
+	nav {
+		padding-right: 50px;
+	}
+
+	.primary.navigation {
+		display: none;
+	}
+
+	.toggleMenu {
+	  display: block;
+	  font-size: 16px;
+    text-align: right;
+	}
+
+
+	body > .header .tagline {
+		font-size: 13px;
+		color: #fec73c;
+    display: none;
+	}
+
+	.primary.navigation {
+		background-color: #364162;
+		border-radius: 0;
+    left: 0;
+    margin: 1px 0 0 0!important;
+		padding: 0.75em 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+	}
+
+	.primary.navigation > li {
+		float: none;
+    margin: 0 0 0.5em;
+    padding: 0;
+	}
+
+	.primary.navigation > li > a {
+	  font-size: 0.8em;
+	  font-weight: 600;
+	  padding: 8px 12px;
+	}
+
+
+	.primary.navigation > [data-has-dropdown] > a {
+	  padding-right: 1.20em;
+	}
+
+	
+	.primary.navigation > li.current > a {
+    border: none;
+
+	  font-weight: 600;
+	}
+
+	.primary.navigation > [data-has-dropdown] > a:after {
+	  right: 0.2em;
+	  top: 50%;
+	  width: 0;
+	}
+
+	
+	.primary.navigation > [data-has-dropdown] > a + .dropdown {
+    display: block;
+    left: auto;
+    margin-left: 0;
+		padding: 0;
+		position: static;
+    text-align: left;
+		top: 0;
+		z-index: 1;
+	}
+
+  .primary.navigation > [data-has-dropdown]:hover:after {
+    content: none;
+  }
+
+	.primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
+	.primary.navigation > [data-has-dropdown]:focus > a + .dropdown {
+	  display: block;
+	}
+
+	.dropdown {
+		background-color: transparent;
+		border-radius: 0;
+		line-height: 1.16667em;
+		margin-left: -75px;
+		min-width: 150px;
+		text-align: center;
+	}
+
+  .dropdown li > a {
+    border-top: none;
+    padding: 6px 0;
+  }
+
+  .dropdown li.current > a {
+    border-top: none;
+  }
+
+	.header .three.columns {
+		max-width: 400px;
+		width: 30%;
+	}
+
+	.header .five.columns {
+		max-width: 400px;
+	  	width: 36.66667%;
+	}
+}
+
+
+
+/* Deskop */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+	.primary.navigation > li {
+	  margin: 0 0.2em;
+	}
+
+	.primary.navigation > li > a {
+	  font-weight: 600;
+	  padding: 0.3em 0.65em;
+	}
+
+	.primary.navigation > [data-has-dropdown] > a {
+	  padding-right: 1.20em;
+	}
+	
+	.primary.navigation > li.current > a {
+	  font-weight: 500;
+	}
+
+	.primary.navigation > [data-has-dropdown] > a:after {
+	  right: 0.2em;
+	  top: 50%;
+	  width: 0;
+	}
+
+	
+	.primary.navigation > [data-has-dropdown] > a + .dropdown {
+	  padding: 1em 0;
+	}
+
+	.primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
+	.primary.navigation > [data-has-dropdown]:focus > a + .dropdown {
+	  display: block;
+	}
+
+	body > .header .tagline {
+		font-size: 14px;
+		color: #fec73c;
+	}
+}
