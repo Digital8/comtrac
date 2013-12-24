@@ -261,6 +261,8 @@ label[for=search]:before {
 
 #quickEnquiry fieldset .field {
   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
@@ -282,7 +284,9 @@ label[for=search]:before {
 
 #quickEnquiry fieldset [data-type=text] {
   -webkit-box-flex: 1;
+  -moz-box-flex: 1;
   -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
   flex: 1 1 0;
   padding: 10px 10px 10px 0;
 }
