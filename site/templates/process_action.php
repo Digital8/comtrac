@@ -1,17 +1,18 @@
 <?php
 
-// production TBD
-// $fromMail = "";
-// $managerTo = "";
+// Production TBD
+// $fromMail = "info@comtrac.com.au";
+// $managerTo = "info@comtrac.com.au";
 
-$fromMail = "info@localhost";
-$managerTo = 'mike@digital8.com.au';
+// Development
+$fromMail = "info@comtrac.com.au";
+$managerTo = 'michael@digital8.com.au';
 
 $response = array();
 
 
 if ($input->get->exportCSV) {
-	// prepare the newsletter email list for the csv export.
+	// Prepare the newsletter email list for the csv export.
 	$fileName = 'email-list.csv';
  
 	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
