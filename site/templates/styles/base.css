@@ -16,6 +16,14 @@
 
 */
 
+a ,
+a:hover{
+  -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
 ::selection {
   background-color: #fec73c;
 }
@@ -137,6 +145,10 @@ dd, dt {
 
 .pull-right {
   float: right;
+}
+
+.paddingRight {
+  padding-right: 15px;
 }
 
 .inline {

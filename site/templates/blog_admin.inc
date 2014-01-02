@@ -46,8 +46,7 @@
 ?>
 
 <div class="addButton paddingBottom">
-	<a class="btn btn-default" href="<?php echo $config->urls->root; ?>processwire/page/add/?parent_id=1093" ><span class="glyphicon glyphicon-plus-sign"></span> Add a new category</a>&nbsp;
-	<a class="btn btn-default" href="<?php echo $config->urls->root; ?>processwire/page/list/?open=1093" ><span class="glyphicon glyphicon-plus-sign"></span> Add an article</a>
+	<a class="btn btn-default" href="<?php echo $config->urls->root; ?>blog-categories/" ><span class="glyphicon glyphicon-plus-sign"></span> Add a new article</a>
 </div>
 
 <div class="description">This is the list of existing news and articles in the system. To edit this list, you have to go to the "Pages" tab (on the main navigation bar), then click "News" or "Articles". Click on the item you want to update, then click on "Edit"</div>

@@ -466,7 +466,7 @@
 
 .news input[data-type=text],
 .news select[data-type=text],
-.news label[for=search]{
+.news label[for=search_query]{
   margin-top: -10px;
   margin-bottom: -12px;
 }
@@ -534,6 +534,6 @@
 
 /*-Contact----------------------------------------------*/
 
-.contact.section [data-type=text] {
-  
+.contact.section{
+  border-bottom: 1px solid #fec73c;
 }

@@ -27,8 +27,6 @@
 .feature .heading {
   background-color: #414e74;
   border-radius: 2px 2px 0 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #fec73c;
   display: inline-block;
@@ -73,13 +71,9 @@
 }
 /*----------------------------------------------*/
 
-.fore-for {
-  display:table;
-}
 .for.section{
   padding:0;
   overflow:auto;
-  display:table-row;
 }
 
 .for.item{
@@ -88,10 +82,9 @@
   float:left;
   overflow: hidden;
   width: 25%;
-  min-height: 33em;
+  height: 36em;
   padding: 5em 0 3em 0;
   margin: 0;
-  display:table-cell;
 }
 
 .for.item[data-image=investigators]{

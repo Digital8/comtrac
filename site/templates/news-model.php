@@ -11,7 +11,7 @@ include("./head.inc");
 </div>
 
 <div class="features section" data-image="circles">
-	<div class="pull-right">
+	<div class="pull-right paddingRight">
 		<a href="<?php echo $pages->get('/company/blog/')->url ?>" class="btn btn-default">BACK TO THE BLOG</a>
 	</div>
 

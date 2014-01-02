@@ -118,11 +118,11 @@ if (!empty($displayFeatures))  {
         <p><?php echo $page->get('home_sectioncontent'); ?></p>
 
         <?php 
-        	$companProfilePage = $pages->get('/company/company-profile/');
+        	$ourEthosPage = $pages->get('/company/our-ethos/');
         	$servicesPage = $pages->get('/solutions/');
         ?>
 
-        <a class="button inline" href="<?php echo $companProfilePage->url ?>">Company Profile</a>
+        <a class="button inline" href="<?php echo $ourEthosPage->url ?>">Our Ethos</a>
         <a class="alternate button" href="<?php echo $servicesPage->url ?>">Solutions</a>
       </div>
 

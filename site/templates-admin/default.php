@@ -59,6 +59,9 @@ $config->scripts->append($config->urls->adminTemplates . "scripts/main.js");
 
 	<?php foreach($config->scripts->unique() as $file) echo "\n\t<script type='text/javascript' src='$file'></script>"; ?>
 
+	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/utils.js"></script>
+	<script type="text/javascript" src="<?php echo $config->urls->adminTemplates?>scripts/back.js"></script>
+
 </head>
 <body<?php if($bodyClass) echo " class='$bodyClass'"; ?>>
   <div class="topbar">

@@ -25,7 +25,7 @@ include("./head.inc");
 	</div>
 </div>
 
-<div class="section">
+<div class="section software">
 	<div class="clear contained">
 		<div class="features six inline columns">
 			<h2 class="list heading"><?php echo $page->get('left_title'); ?></h2>

@@ -6,7 +6,7 @@
 
 // Development
 $fromMail = "info@comtrac.com.au";
-$managerTo = 'michael@digital8.com.au';
+$managerTo = 'info@comtrac.com.au';
 
 $response = array();
 
@@ -36,6 +36,72 @@ if ($input->get->exportCSV) {
 	fclose($fh);
 	// Make sure nothing else is sent, our file is done
 	return true;
+}
+
+if ($input->get->categoryList) {
+	$id_news_template = 60;
+
+	$displayResult = array();
+	$finalResult = "";
+
+	$categories = $pages->get("/blog-categories/");
+
+	if ($categories->numChildren > 0) {
+
+		foreach ($categories->children("include=hidden") as $cat) {
+
+			$categoryName = $cat->title;
+			$categoryId = $cat->id;
+
+			$current = array('categoryId' => $categoryId, 'categoryName' => $categoryName, "template_id" => $id_news_template);
+			$displayResult[] = $current;
+
+		}
+	}
+
+	if (sizeof($displayResult) == 0) {
+		$finalResult = "No result";
+	} else {
+		$finalResult = "Please find the available categories below";
+	}
+
+	$response['success'] = true;
+	$response['message'] = $finalResult;
+	$response['categoryList'] = $displayResult;
+
+	echo json_encode($response);
+}
+
+
+// admin form so no token test (?)
+$formSubmitted = $input->post->formSubmitted;
+
+if (!empty($formSubmitted) && $formSubmitted == "newCategoryForm") {
+	// Save in the ProcessWire page tree; map submission to the template fields
+	$np = new Page(); // create new page object
+	$np->template = $templates->get("category_model"); 
+	$np->parent = $pages->get("/blog-categories/");
+
+	$title = $sanitizer->text($input->post->category);
+
+	if (!empty($title)) {
+
+		// Match up the sanitized inputs we just got with the template fields
+		$np->of(false);
+		$np->title = $title;
+
+		// Save/create the page
+		$np->save();	
+
+		$response['success'] = true;
+		$response['message'] = "Your category was created with success.";
+
+	} else {
+		$response['success'] = false;
+		$response['message'] = 'The category was not created, please try again.';
+	}
+
+	echo json_encode($response);
 }
 
 

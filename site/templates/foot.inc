@@ -99,6 +99,8 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/utils.js"></script>
 
+	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/front.js"></script>
+
 	<script type="text/javascript">
 		$(function() {
 			var pull 		= $('#pull');

@@ -118,11 +118,13 @@
 	    <div class="hero emphasised section" data-image="seats">
 	      <div class="clear contained">
 	        <div class="item" data-image="scales">
-	          <h2 class="heading">
-	            Inspection, Investigation and Brief Management System.
-	          </h2>
-	          <a class="play button vimeo cboxElement" title="<?php echo $homeVideoTitle; ?>" href="<?php echo $homeVideoLink; ?>"><span>Play Video</span></a>
-	          <a class="alternate button" href="<?php echo $pages->get("/company/contact/")->url ?>">Organise A Demo</a>
+	        	<div class="content">
+		          <h2 class="heading">
+		            Inspection, Investigation and Brief Management System.
+		          </h2>
+		          <a class="play button vimeo cboxElement" title="<?php echo $homeVideoTitle; ?>" href="<?php echo $homeVideoLink; ?>"><span>Play Video</span></a>
+		          <a class="alternate button" href="<?php echo $pages->get("/company/contact/")->url ?>">Organise A Demo</a>
+		        </div>
 	        </div>
 	      </div>
 	  	</div>
@@ -159,7 +161,7 @@
 				echo '				<select id="category" name="category" data-type="text">';
 				echo '     				<option value="all">Category: All</option>';  
 				foreach ($categories as $category) {
-					echo ' 					<option value="' . $category->name . '">' . $category->name . '</option>';
+					echo ' 					<option value="' . $category->name . '">' . $category->title . '</option>';
 				}	
 				echo '				</select>';
 				echo '			</div>';

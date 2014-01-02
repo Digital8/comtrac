@@ -76,6 +76,13 @@ class ProcessPageAdd extends Process {
 			if(!$this->isAllowedTemplate($this->template)) throw new WireException("You don't have access to the template required to add pages here"); 
 		}
 
+		// if parameter is given
+		if (isset($_GET['template_id'])) {
+			$template_id = (int) $_GET['template_id']; 
+			$this->template = $this->templates->get($template_id);
+		}
+
+
 		$this->form = $this->buildForm();
 		$this->form->setTrackChanges();
 
@@ -212,6 +219,12 @@ class ProcessPageAdd extends Process {
 
 		} else if(!count($_POST)) {
 			$this->message(sprintf($this->_("You are adding a page using the '%s' template"), $this->getTemplateLabel($this->template))); 
+			$field = $this->modules->get('InputfieldHidden'); 
+			$field->attr('id', 'Inputfield_template');
+			$field->attr('class', 'required');
+			$field->attr('name', 'template'); 
+			$field->attr('value', $this->template->id); 
+			$form->append($field);
 		}
 
 		$field = $this->modules->get('InputfieldHidden'); 
@@ -270,9 +283,15 @@ class ProcessPageAdd extends Process {
 		}
 
 		$template = $this->template; 
+		$templateSubmitted = $this->input->post->template;
+
 		if(is_null($template)) { 
-			$templatesId = (int) $form->children->get('template')->value; 
-			$template = $this->templates->get($templatesId); 
+			if (is_null($templateSubmitted)) {
+				$templatesId = (int) $form->children->get('template')->value; 
+				$template = $this->templates->get($templatesId); 
+			} else {
+				$template = $this->templates->get($templateSubmitted);
+			}
 		}
 
 		if(!$this->isAllowedTemplate($template)) throw new WireException("You don't have access to add pages with template '$template'"); 

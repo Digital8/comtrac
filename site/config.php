@@ -214,10 +214,10 @@ $config->dbLowercaseTables = true;
  * Installer: Database Configuration
  * 
  */
-$config->dbHost = 'localhost';
+$config->dbHost = '127.0.0.1';
 $config->dbName = 'comtrac';
 $config->dbUser = 'root';
-$config->dbPass = 'l3tm3in';
+$config->dbPass = '';
 $config->dbPort = '3306';
 
 /**

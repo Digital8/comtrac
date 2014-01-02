@@ -18,8 +18,11 @@
     0 1px 5px rgba(30,40,70,0.05);
   box-sizing: border-box;
   height: 330px;
-  padding: 95px 105px;
   width: 100%;
+}
+
+.hero .item .content{
+  padding: 95px 105px;
 }
 
 .hero .item[data-image=scales] {

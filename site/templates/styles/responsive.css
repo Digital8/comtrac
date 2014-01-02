@@ -54,6 +54,10 @@
     padding: 120px 0 30px;
   }
 
+  .hero .item .content{
+    padding:15px;
+  }
+
   .hero .item{
     padding:15px 0;
     text-align: center;
@@ -64,6 +68,7 @@
     text-align: center;
     font-size: 24px;
   }
+
 
   .features.section .divider,
   .solutions.section .divider,
@@ -133,6 +138,14 @@
 
   .recent.news.section .heading{
     
+  }
+    .software.section .heading{
+    margin-top:0;
+    margin-bottom:0.5em;
+  }
+
+  .software.section img.extend{
+    max-width:100%;
   }
 
   .circle.list {
@@ -337,9 +350,12 @@
   }
 
   .hero .item{
-    padding:50px;
     text-align: center;
     height:auto;
+    padding:30px 0;
+  }
+  .hero .item .content{
+    padding:50px 15px;
   }
   .hero .item .heading {
     width:100%;
@@ -365,17 +381,22 @@
     max-width: 600px;
   }
 
-  .feature p{
-    height: 9em;
-  }
-
-  .for.item{
+    .for.item{
     padding:2em 0;
   }
 
   .for.item .plain.list,
   .for.item .heading{
     padding: 0 30px;
+  }
+  
+  .for.item {
+    width: 50%;
+    max-width: 1000px;
+  }
+
+  .feature p{
+    height: 9em;
   }
 
   .software.section .heading{
@@ -433,11 +454,31 @@
 
 }
 
+@media (min-width:992px) and (max-width: 1399px){
+  .for.item{
+    padding:2em 0;
+    height:28em;
+  }
+
+  .for.item .plain.list,
+  .for.item .heading{
+    padding: 0 30px;
+  }
+  
+  .for.item {
+    width: 50%;
+    max-width: 1000px;
+  }
+}
 
 
 
-/* Desktop ---------------------------*/
 
-@media (max-width: 1199px){
+/* Small Desktop ---------------------------*/
 
+@media (min-width:1400px) and (max-width: 1700px){
+  .for.item{
+    padding:2em 0 3em;
+    height:40em;
+  }
 }
