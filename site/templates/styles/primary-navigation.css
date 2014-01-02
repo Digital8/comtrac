@@ -58,8 +58,11 @@
   border-color: #fec73c transparent transparent transparent;
 }
 
+.primary.navigation > [data-has-dropdown]:hover > a {
+  color: #fff;
+}
+
 .primary.navigation > [data-has-dropdown][data-active] > a,
-.primary.navigation > [data-has-dropdown]:hover > a,
 .primary.navigation > [data-has-dropdown]:focus > a {
   border-color: transparent;
   color: #fec73c;
@@ -67,7 +70,6 @@
 }
 
 .primary.navigation > [data-has-dropdown][data-active] > a:after,
-.primary.navigation > [data-has-dropdown]:hover > a:after,
 .primary.navigation > [data-has-dropdown]:focus > a:after {
   border-color: #fec73c transparent transparent transparent;
 
