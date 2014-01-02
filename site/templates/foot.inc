@@ -85,6 +85,8 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/lib/jquery-1.9.1.min.js"></script>
 
+	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/lib/jquery.menu-aim.min.js"></script>
+
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/lib/placeholdify.js"></script>
 
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/lib/jquery.validate.min.js"></script>
@@ -104,8 +106,26 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 	<script type="text/javascript">
 		$(function() {
 			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
+		  var menu 		= $('nav ul');
+		  var menuHeight	= menu.height();
+      var toggle = $('.toggleMenu')
+
+      var activate = function(row) {
+        if (toggle.is(':hidden')) {
+          $(row).attr('data-active', true)
+        }
+      };
+
+      var deactivate = function(row) {
+        $(row).removeAttr('data-active')
+      };
+
+      $('.primary.navigation').menuAim({
+        activate: activate,
+        deactivate: deactivate,
+        submenuDirection: 'below',
+        tolerance: 100
+      });
 
 			$(pull).on('click', function(e) {
 				e.preventDefault();

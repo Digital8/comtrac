@@ -192,8 +192,7 @@
 	  width: 0;
 	}
 
-	.primary.navigation > [data-has-dropdown]:hover > a + .dropdown,
-	.primary.navigation > [data-has-dropdown]:focus > a + .dropdown {
+	.primary.navigation > [data-has-dropdown][data-active] > a + .dropdown {
 	  display: block;
 	}
 
