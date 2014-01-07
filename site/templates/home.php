@@ -2,7 +2,7 @@
 
 function truncate($text) {
 	$plain = strip_tags($text);
-	$trimmed = join(" ", array_slice(split(" ", $plain), 0, 32));
+	$trimmed = join(" ", array_slice(split(" ", $plain), 0, 24));
 	$truncated = ($trimmed !== $plain ?
 		$trimmed . "…" : $plain
 	);
