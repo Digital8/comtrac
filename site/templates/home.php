@@ -1,5 +1,14 @@
 <?php 
 
+function truncate($text) {
+	$plain = strip_tags($text);
+	$trimmed = join(" ", array_slice(split(" ", $plain), 0, 32));
+	$truncated = ($trimmed !== $plain ?
+		$trimmed . "…" : $plain
+	);
+	return '<p>' . $truncated . '</p>';
+}
+
 /**
  * Home template
  *
@@ -197,7 +206,7 @@ if (!empty($displayFeatures))  {
         <a href="<?php echo $firstNews['url']; ?>">
           <h3 class="heading"><?php echo $firstNews['title']; ?></h3>
           <span class="date"><?php echo $firstNews['datetime']; ?></span>
-          <?php echo $firstNews['description']; ?>
+          <?php echo truncate($firstNews['description']); ?>
         </a>
       </li>
 
@@ -205,7 +214,7 @@ if (!empty($displayFeatures))  {
         <a href="<?php echo $secondNews['url']; ?>">
           <h3 class="heading"><?php echo $secondNews['title']; ?></h3>
           <span class="date"><?php echo $secondNews['datetime']; ?></span>
-          <?php echo $secondNews['description']; ?>
+          <?php echo truncate($secondNews['description']); ?>
         </a>
       </li>
 
@@ -213,7 +222,7 @@ if (!empty($displayFeatures))  {
         <a href="<?php echo $thirdNews['url']; ?>">
           <h3 class="heading"><?php echo $thirdNews['title']; ?></h3>
           <span class="date"><?php echo $thirdNews['datetime']; ?></span>
-          <?php echo $thirdNews['description']; ?>
+          <?php echo truncate($thirdNews['description']); ?>
         </a>
       </li>
 
@@ -221,7 +230,7 @@ if (!empty($displayFeatures))  {
         <a href="<?php echo $fourthNews['url']; ?>">
           <h3 class="heading"><?php echo $fourthNews['title']; ?></h3>
           <span class="date"><?php echo $fourthNews['datetime']; ?></span>
-          <?php echo $fourthNews['description']; ?>
+          <?php echo truncate($fourthNews['description']); ?>
         </a>
       </li>
     </ul>
