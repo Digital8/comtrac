@@ -103,49 +103,6 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/front.js"></script>
 
-	<script type="text/javascript">
-		$(function() {
-			var pull 		= $('#pull');
-		  var menu 		= $('nav ul');
-		  var menuHeight	= menu.height();
-      var toggle = $('.toggleMenu')
-
-      var activate = function(row) {
-        if (toggle.is(':hidden')) {
-          $(row).attr('data-active', true)
-        }
-      };
-
-      var deactivate = function(row) {
-        $(row).removeAttr('data-active')
-      };
-
-      $('.primary.navigation').menuAim({
-        activate: activate,
-        deactivate: deactivate,
-        submenuDirection: 'below',
-        tolerance: 100
-      });
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-		
-		$(document).ready(function(){
-			$(".vimeo").colorbox({iframe:true, innerWidth:960, innerHeight:540});
-		});
-
-	</script>
-
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -154,7 +111,6 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 
 	  ga('create', 'UA-46676829-1', 'comtrac.com.au');
 	  ga('send', 'pageview');
-
 	</script>
 
 </body>
