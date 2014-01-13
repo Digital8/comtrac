@@ -62,6 +62,7 @@
 	}
 
 	.toggleMenu {
+    color: #fff;
 	  display: block;
 	  font-size: 16px;
     text-align: right;
