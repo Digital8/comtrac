@@ -32,7 +32,6 @@ $('[data-placeholdified] [data-type=text]').each(function() {
   placeholdify($(this)[0])
 })
 
-/*
 var drimeout = null
 
 $('.dropdown a').on('mouseover', function() {
@@ -51,7 +50,6 @@ $('.dropdown').on('mouseout', function() {
     }
   }, 1000)
 })
-*/
 
 $('.highlighted')
   .on('mouseover', function() {
@@ -66,11 +64,9 @@ var menu 		= $('nav ul');
 var menuHeight	= menu.height();
 var toggle = $('.toggleMenu')
 var nav = $('.primary.navigation')
-var timeout = null
 
 var activate = function(row) {
   if (toggle.is(':hidden')) {
-    clearTimeout(timeout)
     $(row).attr('data-active', true)
   }
 };
@@ -79,23 +75,17 @@ var deactivate = function(row) {
   $(row).removeAttr('data-active')
 };
 
-var enter = function() {
-  clearTimeout(timeout)
-}
-
-var end = function() {
-  timeout = setTimeout(function() {  
-    nav.find('li').removeAttr('data-active')
-  }, 500)
+var exitMenu = function() {
+  clearTimeout(drimeout)
+  nav.find('.dropdown').removeAttr('data-has-target')
+  return true
 }
 
 nav.menuAim({
   activate: activate,
   deactivate: deactivate,
-  enter: enter,
-  exitMenu: end,
+  exitMenu: exitMenu,
   submenuDirection: 'below',
-  tolerance: 50
 });
 
 $(pull).on('click', function(e) {

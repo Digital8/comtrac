@@ -1,7 +1,6 @@
 .primary.navigation > li {
   float: left;
-  padding-bottom: 42px;
-  margin: 0 0.5em;
+  padding: 0 0.5em 42px;
 }
 
 .primary.navigation > li > a {
