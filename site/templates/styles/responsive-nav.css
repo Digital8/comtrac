@@ -62,12 +62,14 @@
 	}
 
 	.toggleMenu {
-    color: #fff;
 	  display: block;
 	  font-size: 16px;
     text-align: right;
 	}
 
+  .toggleMenu:hover {
+    color: #fff;
+  }
 
 	body > .header .tagline {
 		font-size: 13px;
