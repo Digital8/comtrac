@@ -154,6 +154,10 @@
     border-top: none;
   }
 
+  .dropdown[data-has-target] a {
+    color: #a2aac6;
+  }
+
 	.header .three.columns {
 		max-width: 400px;
 		width: 30%;
