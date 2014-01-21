@@ -128,7 +128,7 @@ if (!empty($displayFeatures))  {
 
         <?php 
         	$ourEthosPage = $pages->get('/company/our-ethos/');
-        	$servicesPage = $pages->get('/solutions/');
+        	$servicesPage = $pages->get('/solutions/criminal-investigations/');
         ?>
 
         <a class="button inline" href="<?php echo $ourEthosPage->url ?>">Our Ethos</a>

@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-.breadcrumb .parent {
+.breadcrumb .parent, .breadcrumb a.parent:hover {
   color: #6d789a;
   text-decoration: none;
 }

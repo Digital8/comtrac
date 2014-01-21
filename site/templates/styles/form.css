@@ -306,7 +306,7 @@ label[for=search]:before {
   padding-top: 11px;
 }
 
-#quickEnquiry fieldset [data-invalid] label {
+#quickEnquiry fieldset [data-invalid] label, #quickEnquiry fieldset [data-invalid][data-focused] label {
   background-color: #e33838;
   color: #fff;
 }

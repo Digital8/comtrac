@@ -199,14 +199,14 @@
 .integration.section {
   text-align:center;
 }
-.icon-circle[data-image]{
+.icon-circle, .icon-circle[data-image]{
   width:120px;
   height:120px;
   background-color:#515c7d;
-  margin:2em auto;
+  margin:0.5em auto;
   border-radius: 60px;
-
-  background-image: url(../images/integration-icons@2x.png);
+  font-size: 5.6em;
+  color: #fec73c;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 82px 480px;
@@ -472,13 +472,21 @@
 }
 
 .news.post .date{
-  text-align: center;
   font-size: 24px;
 }
 
 .news.post .heading{
   margin-bottom: 0.2em;
   font-size:34px;
+}
+
+a.backToBlog {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+a.backToBlog:hover {
+  color: #fec73c;
 }
 
 /*-FAQ---------------------------------------------*/

@@ -16,12 +16,14 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 	// Search the title, body and sidebar fields for our query text.
 	// Limit the results to 50 pages. 
 	// Exclude results that use the 'admin' template. 
-	$matches = $pages->find("title|body|sidebar~=$q, limit=50"); 
+	$matches = $pages->find("title|body|sidebar~=$q, template=news-model, limit=50"); 
 
 	$count = count($matches); 
 
 	if($count) {
-		$out .= "<h2>Found $count pages matching your query:</h2>" . 
+		$out .= "<h2 class='heading'>Found $count pages matching your query:</h2>" .
+			"</div>" . 
+			"<div class='clear contained'>" .
 			"<ul class='nav'>";
 
 		foreach($matches as $m) {
@@ -43,7 +45,16 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 // we wanted to make sure we had that setup before including the header template. 
 
 include("./head.inc"); 
+?>
 
-echo $out; 
+<div class="features section">
+    <div class="clear narrow contained">
+
+		<?php echo $out; ?>
+
+	</div>
+</div>
+
+<?php
 
 include("./foot.inc"); 

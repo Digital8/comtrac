@@ -6,16 +6,19 @@ include("./head.inc");
 <div class="emphasised news post section" data-image="bridge">
     <div class="clear narrow contained">
       <h2 class="heading"><?php echo $page->get('news_title'); ?></h2>
-      <p class="date"><?php echo $page->get('news_datetime'); ?></p>
+    </div>
+    <div class="clear contained">
+      <div class="five inline columns">
+        <a href="<?php echo $pages->get('/company/blog/')->url ?>" class="backToBlog"><i class="icon-left-arrow"></i> BACK TO THE BLOG</a>
+      </div>
+      <div class="seven inline columns date">
+        <?php echo $page->get('news_datetime'); ?>
+      </div>
     </div>
 </div>
 
-<div class="features section" data-image="circles">
-	<div class="pull-right paddingRight">
-		<a href="<?php echo $pages->get('/company/blog/')->url ?>" class="btn btn-default">BACK TO THE BLOG</a>
-	</div>
-
-    <div class="clear narrow contained">
+<div class="clear features section" data-image="circles">
+	<div class="clear contained">
     	<?php
     			// Display image from post
     			if(count($page->get('post_image'))) {
@@ -29,10 +32,11 @@ include("./head.inc");
 				}
     	?>
       		<p><?php echo $page->get('news_description'); ?></p>
-   		</div>
+   	
     </div>
+
     <?php if(count($page->get('blog_file'))) { ?>
-    <div class="clear narrow contained">
+    <div class="clear contained">
     	<h2 class="heading">Document attached: </h2>
     	<ul class="circle list">
     		<?php 
@@ -48,6 +52,8 @@ include("./head.inc");
         </ul>    			
     </div>
     <?php } ?>
+
+    </div>
 </div>
 
 

@@ -20,7 +20,11 @@
 }
 
 .recent.news .item a {
-  -webkit-transition: background 80ms ease;
+  /*-webkit-transition: background 80ms ease;*/
+  -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
   background:transparent;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d81c243b,endColorstr=#d81c243b);
   zoom:1;
@@ -37,6 +41,10 @@
 
 .recent.news .item a:hover,
 .recent.news .item a:focus {
+  -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
   background:transparent;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e01c243b,endColorstr=#e01c243b); 
   zoom:1;

@@ -70,7 +70,7 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 	      <span><a data-social="google-plus" href="https://plus.google.com/104342209944279037153/posts" target="_blank">+1 us</a></span>
 	      <span><a data-social="truelocal" href="http://www.linkedin.com/company/comtrac/" target="_blank">Find us</a></span>
 
-	      <span class="agency">Site by <a href="http://digital8.com.au">Digital8</a></span>
+	      <span class="agency">Site by <a target="_blank" href="http://digital8.com.au">Digital8</a></span>
 	    </p>
   	</div>
 
@@ -100,8 +100,22 @@ $tokenValue = $this->session->CSRF->getTokenValue();
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/index.js"></script>
 
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/utils.js"></script>
-
+	<?php if (empty($input->get->category)) { ?>
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/front.js"></script>
+	<?php } ?>
+
+
+	<?php if (!empty($input->get->category)) { ?>
+	<!-- To be sure it's imported --> 
+	<script type="text/javascript" src="<?php echo $config->urls->templates?>scripts/front.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			displayBlogArticles();
+		});
+
+	</script>
+	<?php } ?>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

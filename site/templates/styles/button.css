@@ -27,7 +27,7 @@
   !text-shadow: none;
 }
 
-.button:focus {
+.button:focus, .alternate.button:focus {
   outline: none;
 }
 
@@ -36,6 +36,14 @@
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.05); 
 }
+
+.alternate.button:hover,
+.alternate.button:focus {
+  background-color: #252f4e;
+  !text-shadow: none;
+}
+
+
 
 .play.button span:after {
   border-color: transparent transparent transparent #252f4e;  

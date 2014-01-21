@@ -69,19 +69,19 @@ include("./head.inc");
 	</div>
 	<div class="clear contained">
 	  <div class="three inline columns">
-	    <div class="icon-circle" data-image="inspection"></div>
+	    <div class="icon-circle"><i class="icon-searchv2 icon-pos"></i></div>
 	    <p><?php echo $page->get('second_col1_content'); ?></p>
 	  </div>
 	  <div class="three inline columns">
-	    <div class="icon-circle" data-image="web"></div>
+	    <div class="icon-circle"><i class="icon-computer icon-pos"></i></div>
 	    <p><?php echo $page->get('second_col2_content'); ?></p>
 	  </div>
 	  <div class="three inline columns">
-	    <div class="icon-circle" data-image="cloud"></div>
+	    <div class="icon-circle"><i class="icon-screen icon-pos"></i></div>
 	    <p><?php echo $page->get('second_col3_content'); ?></p>
 	  </div>
 	  <div class="three inline columns">
-	    <div class="icon-circle" data-image="database"></div>
+	    <div class="icon-circle"><i class="icon-database icon-pos"></i></div>
 	    <p><?php echo $page->get('second_col4_content'); ?></p>
 	  </div>
 

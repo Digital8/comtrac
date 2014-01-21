@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title><?php echo $page->get("headline|title"); ?></title>
+	<title>COMtrac - <?php echo $page->get("headline|title"); ?></title>
 
 	<meta name="description" content="<?php echo $page->summary; ?>" />
 
@@ -149,6 +149,8 @@
 				$categoryPage = $pages->get('/blog-categories/');
 				$categories = $categoryPage->children('include=hidden');
 
+				$selectedCategory = $input->get->category;
+
 				echo '<div class="breadcrumb news section">';
 				echo '	<div class="clear contained">';
 				echo '		<div class="six inline columns left">';
@@ -161,14 +163,20 @@
 				echo '				<select id="category" name="category" data-type="text">';
 				echo '     				<option value="all">Category: All</option>';  
 				foreach ($categories as $category) {
-					echo ' 					<option value="' . $category->name . '">' . $category->title . '</option>';
+					$selected = "";
+
+					if (!empty($selectedCategory) && $selectedCategory == $category->name) {
+						$selected = "selected='selected' ";
+					}
+
+					echo ' 					<option value="' . $category->name . '" ' . $selected . '>' . $category->title . '</option>';
 				}	
 				echo '				</select>';
 				echo '			</div>';
 				echo '  	</div>';
 				echo '									';
 				echo '		<div class="three inline columns">';
-				echo '			<form id="search_form" action="'. $config->urls->root . 'search/ method="get">';
+				echo '			<form id="search_form" action="'. $config->urls->root . 'company/blog/search/" method="get">';
 				echo '				<div class="short field required" data-placeholdified>';
 				echo '					<label for="search_query">Search</label>';
 				echo '     				<input id="search_query" name="q" data-type="text" value="' . htmlentities($input->whitelist('q'), ENT_QUOTES, 'UTF-8') . '" type="search">';

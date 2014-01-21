@@ -111,3 +111,20 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+.news a.button {
+  color: #252f4e;
+}
+
+.news a:hover .content {
+  background-color: #161d32;
+}
+
+
+.blog-article a, .nav a {
+  color: #E6A400;
+}
+
+.blog-article a:hover, .nav a:hover {
+  color: #6d789a;
+}
